@@ -1,0 +1,242 @@
+snippet php
+	<?php declare(strict_types = 1);
+	/**
+	 * $Id$
+	 */
+	${1}
+# Comments
+snippet cmt
+	/**
+	 *
+	 */
+	${1:code}
+snippet lcmt
+	//============================== ${1} ==============================//
+snippet bcmt
+	/* ${1} */
+# Control Structures
+snippet if
+	if (${1:condition}) {
+		${2:code}
+	}
+snippet else
+	else {
+		${1}
+	}
+snippet elif
+	else if (${1:condition}) {
+		${2:code}
+	}
+snippet while
+	while (${1:condition}) {
+		${2:code}
+	}
+snippet do
+	do {
+		${2:code}
+	} while (${1:condition});
+snippet for
+	for (${1:exp1}; ${2:exp2}; ${3:exp3}) {
+		${4:code}
+	}
+snippet feach
+	foreach (${1:input} as ${2:value}) {
+		${3:code}
+	}
+snippet feachas
+	foreach (${1:input} as ${2:key} => ${3:value}) {
+		${4:code}
+	}
+snippet switch
+	switch (${1}) {
+		case ${2:condition}:
+			${3:code}
+			break;
+
+		default:
+			${4:default}
+			break;
+	}
+# Functions
+snippet func
+	function ${1:name}(): ${2:void} {
+	}
+snippet afunc
+	function(): ${1:void} {
+	};
+snippet afuncu
+	function(): ${1:void} use (${2:using}) {
+	};
+snippet rt
+	return ${1}
+
+# Classes and Objects
+snippet ts
+	$this->${1}
+snippet cls
+	/**
+	 *
+	 */
+	class ${1:class}
+	{
+	}
+snippet acls
+	/**
+	 *
+	 */
+	abstract class ${1:class}
+	{
+	}
+snippet fcls
+	/**
+	 *
+	 */
+	final class ${1:class}
+	{
+	}
+snippet iface
+	/**
+	 *
+	 */
+	interface ${1:interface}Interface
+	{
+	}
+snippet trait
+	/**
+	 *
+	 */
+	trait ${1:trait}Trait
+	{
+	}
+snippet ns
+	/**
+	 *
+	 */
+	namespace ${1:namespace};
+snippet nsu
+	/**
+	 *
+	 */
+	use ${1:class};
+snippet nsua
+	/**
+	 *
+	 */
+	use ${1:class} as ${2:alias};
+snippet pbcp
+	/**
+	 * @var ${2:type}
+	 */
+	public $${1:name} = null;
+snippet prcp
+	/**
+	 * @var ${2:type}
+	 */
+	protected $${1:name} = null;
+snippet pvcp
+	/**
+	 * @var ${2:type}
+	 */
+	private $${1:name} = null;
+snippet pbscp
+	/**
+	 * @var ${2:type}
+	 */
+	public static $${1:name} = null;
+snippet prscp
+	/**
+	 * @var ${2:type}
+	 */
+	protected static $${1:name} = null;
+snippet pvscp
+	/**
+	 * @var ${2:type}
+	 */
+	private static $${1:name} = null;
+snippet pbcst
+	/**
+	 * @var ${3:type}
+	 */
+	public const ${1:name} = ${2:value};
+snippet prcst
+	/**
+	 * @var ${3:type}
+	 */
+	protected const ${1:name} = ${2:value};
+snippet pvcst
+	/**
+	 * @var ${3:type}
+	 */
+	private const ${1:name} = ${2:value};
+snippet imtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	public function ${1:method}(): ${2:void};
+snippet pbctor
+	/**
+	 *
+	 */
+	public function __construct()
+	{
+	}
+snippet pvctor
+	/**
+	 *
+	 */
+	private function __construct()
+	{
+	}
+snippet pbmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	public function ${1:method}(): ${2:void}
+	{
+	}
+snippet prmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	protected function ${1:method}(): ${2:void}
+	{
+	}
+snippet pvmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	private function ${1:method}(): ${2:void}
+	{
+	}
+snippet pbsmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	public static function ${1:method}(): ${2:void}
+	{
+	}
+snippet prsmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	protected static function ${1:method}(): ${2:void}
+	{
+	}
+snippet pvsmtd
+	/**
+	 *
+	 * @return ${3:void}
+	 */
+	private static function ${1:method}(): ${2:void}
+	{
+	}
+# Exceptions
+snippet try
+	try { /**/ } catch (Exception $e) {
+	}
