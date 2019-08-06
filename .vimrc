@@ -20,7 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'christoomey/vim-sort-motion'
     Plug 'christoomey/vim-system-copy'
-    Plug 'luochen1990/rainbow'
 call plug#end()
 
 set backspace=indent,eol,start
